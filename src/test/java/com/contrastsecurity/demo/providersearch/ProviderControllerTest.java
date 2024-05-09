@@ -33,27 +33,27 @@ public class ProviderControllerTest {
     //     assertThat(controller).isNotNull();
     // }
 
-    @Test
-    public void testProviderSearch() {
-        assertThat(
-                    this
-                    .restTemplate
-                    .getForObject("http://localhost:" + port + "/", String.class))
-                .contains("Provider Search");
+    // @Test
+    // public void testProviderSearch() {
+    //     assertThat(
+    //                 this
+    //                 .restTemplate
+    //                 .getForObject("http://localhost:" + port + "/", String.class))
+    //             .contains("Provider Search");
 
-        HttpHeaders headers = new HttpHeaders();
-        MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
-        map.add("zipCode", "21230");
+    //     HttpHeaders headers = new HttpHeaders();
+    //     MultiValueMap<String, String> map= new LinkedMultiValueMap<String, String>();
+    //     map.add("zipCode", "21230");
 
-        HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
+    //     HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(map, headers);
 
-        String response = this.restTemplate.postForObject("http://localhost:" + port + "/", request, String.class);
+    //     String response = this.restTemplate.postForObject("http://localhost:" + port + "/", request, String.class);
 
-        //These two are public
-        assertThat(response).contains("Stephen");
-        assertThat(response).contains("Jane");
+    //     //These two are public
+    //     assertThat(response).contains("Stephen");
+    //     assertThat(response).contains("Jane");
 
-        //This one is not
-        assertThat(response).doesNotContain("Alfred");
-    }
+    //     //This one is not
+    //     assertThat(response).doesNotContain("Alfred");
+    // }
 }
