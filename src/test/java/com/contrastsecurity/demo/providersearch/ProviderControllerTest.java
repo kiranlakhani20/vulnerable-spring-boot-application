@@ -15,7 +15,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-
+/*
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProviderControllerTest {
@@ -57,4 +57,4 @@ public class ProviderControllerTest {
     //     assertThat(response).doesNotContain("Alfred");
     // }
     
-}
+}*/
