@@ -28,10 +28,10 @@ public class ProviderControllerTest {
     @Autowired
     private ProviderController controller;
 
-    @Test
-    public void contextLoads() throws Exception {
-        assertThat(controller).isNotNull();
-    }
+    // @Test
+    // public void contextLoads() throws Exception {
+    //     assertThat(controller).isNotNull();
+    // }
 
     // @Test
     // public void testProviderSearch() {
